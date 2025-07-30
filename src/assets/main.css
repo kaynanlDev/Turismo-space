@@ -4,3 +4,10 @@
 /* #0B0D17
 #D0D6F9
 #FFFFFF */
+
+
+@theme {
+    --font-barlow: "Barlow", sans-serif;
+    --font-barlow-c: "Barlow Condensed", sans-serif;
+    --font-bellefair: "Bellefair", serif;
+}
