@@ -11,4 +11,15 @@ html {}
     --font-barlow: "Barlow", sans-serif;
     --font-barlow-c: "Barlow Condensed", sans-serif;
     --font-bellefair: "Bellefair", serif;
+    --animate-fade: fade 0.3s ease-in-out;
+
+    @keyframes fade {
+        0% {
+            opacity: 0%;
+        }
+
+        100 {
+            opacity: 100%;
+        }
+    }
 }
