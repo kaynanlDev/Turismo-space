@@ -5,9 +5,12 @@
 #D0D6F9
 #FFFFFF */
 
-html {}
+
 
 @theme {
+    --color-white: #FFFFFF;
+    --color-black: #0B0D17;
+    --color-blue: #D0D6F9;
     --font-barlow: "Barlow", sans-serif;
     --font-barlow-c: "Barlow Condensed", sans-serif;
     --font-bellefair: "Bellefair", serif;
