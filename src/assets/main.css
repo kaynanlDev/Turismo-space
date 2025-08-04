@@ -5,7 +5,26 @@
 #D0D6F9
 #FFFFFF */
 
+html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+div,
+button,
+span {
+
+    &.scroll-indicator,
+    &.scroll-down,
+    &[class*="scroll"],
+    &[class*="seta"],
+    &[class*="arrow"] {
+        display: none !important;
+    }
+}
 
 @theme {
     --color-white: #FFFFFF;
