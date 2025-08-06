@@ -23,7 +23,7 @@ const router = createRouter({
       component: () => import('../views/EquipeView.vue')
     },
     {
-      path: '/destino',
+      path: '/destino/:moon',
       name: 'destino',
       component: () => import('../views/DestinoView.vue')
     },
@@ -31,7 +31,7 @@ const router = createRouter({
       path: '/tecnologia',
       name: 'tecnologia',
       component: () => import('../views/TecnologiaView.vue')
-    }
+    },
   ],
 })
 
