@@ -23,7 +23,7 @@ const router = createRouter({
       component: () => import('../views/EquipeView.vue')
     },
     {
-      path: '/destino/:moon',
+      path: '/destino',
       name: 'destino',
       component: () => import('../views/DestinoView.vue')
     },
