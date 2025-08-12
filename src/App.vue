@@ -11,7 +11,11 @@ function backHome() {
   document.body.className = ''
 }
 function backDestin() {
-  document.body.classList.add('backDestin')
+  document.body.className = 'backDestin'
+}
+
+function backCrew() {
+  document.body.className = 'backCrew'
 }
 
 </script>
@@ -25,7 +29,7 @@ function backDestin() {
     <nav class="w-[80%] md:w-[55%] lg:w-3/7 py-6 bg-[#ffffff17] hidden sm:flex md:flex items-center justify-center gap-9 backdrop-blur-lg">
       <RouterLink to="/" @click="backHome" class="font-barlow-c uppercase"><span class="font-bold mr-3">00</span>Home</RouterLink>
       <RouterLink to="/destino" @click="backDestin" class="font-barlow-c uppercase"><span class="font-bold mr-3">01</span>Destino</RouterLink>
-      <RouterLink to="/equipe" class="font-barlow-c uppercase"><span class="font-bold mr-3">02</span>Equipe</RouterLink>
+      <RouterLink to="/equipe" @click="backCrew" class="font-barlow-c uppercase"><span class="font-bold mr-3">02</span>Equipe</RouterLink>
       <RouterLink to="/tecnologia" class="font-barlow-c uppercase"><span class="font-bold mr-3">03</span>Tecnologia</RouterLink>
     </nav>
     <button v-if="openMenu === false" @click="openMenu = !openMenu" class="sm:hidden pr-8 cursor-pointer"><img :src="menu" alt="icon menu"></button>
@@ -66,6 +70,14 @@ body{
 
 .backDestin{
   background: url('./assets/bg-Destin.jpg')no-repeat;
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: brightness(50%);
+  color: #fff;
+}
+
+.backCrew{
+  background: url('./assets/bg-Crew.jpg')no-repeat;
   background-position: center;
   background-size: cover;
   backdrop-filter: brightness(50%);

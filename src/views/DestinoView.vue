@@ -5,6 +5,7 @@ import DestinationA from '@/assets/Destination-A.png'
 import DestinationB from '@/assets/Destination-B.png'
 import DestinationC from '@/assets/Destination-C.png'
 import DestinationD from '@/assets/Destination-D.png'
+
 const destinObj = reactive({
     planetName: "lua",
     planetDescription: "Veja o nosso planeta como você nunca viu antes. Uma viagem relaxante perfeita para recuperar a perspectiva e voltar revigorado. Enquanto estiver por lá, absorva um pouco da história visitando os locais de pouso da Luna 2 e da Apollo 11.",
@@ -65,11 +66,11 @@ function destinD() {
                 <div class="mt-10 flex flex-col sm:flex-row justify-around md:justify-between">
                     <div>
                         <h6 class="mb-3 font-barlow-c text-[0.875rem] tracking-[0.125rem] uppercase text-blue text-center lg:text-start">distância média</h6>
-                        <p class="font-bellefair text-[1.75rem] uppercase text-center lg:text-start">384,400 km</p>
+                        <p class="font-bellefair text-[1.75rem] uppercase text-center lg:text-start">{{ destinObj.planetDistance }}</p>
                     </div>
                     <div>
                         <h6 class="mb-3 mt-6 sm:mt-0 font-barlow-c text-[0.875rem] tracking-[0.125rem] uppercase text-blue text-center lg:text-start">Tempo estimado de viagem</h6>
-                        <p class="font-bellefair text-[1.75rem] uppercase text-center lg:text-start">3 dias</p>
+                        <p class="font-bellefair text-[1.75rem] uppercase text-center lg:text-start">{{ destinObj.planetTime }}</p>
                     </div>
                 </div>
             </div>
@@ -77,8 +78,5 @@ function destinD() {
     </div>
 </template>
 <style scoped>
-body{
-    background: url('../assets/bg-Destin.jpg')no-repeat center / cover;
-    backdrop-filter: brightness(100%);
-}
+
 </style>

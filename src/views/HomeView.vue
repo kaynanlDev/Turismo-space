@@ -2,11 +2,12 @@
 function backDestin() {
   document.body.classList.add('backDestin')
 }
+
 </script>
 <template>
     <div class="w-3/4 h-full my-0 mx-auto flex flex-col items-center lg:flex-row py-32 animate-fade">
         <div class="w-full h-[80%] flex flex-col justify-center">
-            <h3 class="w-full font-barlow-c tracking-[0.25rem] text-blue uppercase text-[1rem] sm:text-2xl text-center lg:text-start">então você quer viajar para</h3>
+            <h3 class="w-full font-barlow-c tracking-[0.25rem] text-blue uppercase text-[1rem] sm:text-2xl text-center lg:text-start">então você quer viajar para o</h3>
             <h1 class="w-full text-white font-bellefair uppercase text-[5rem] md:text-[9rem] text-center lg:text-start">espaço</h1>
             <p class="lg:w-[75%] font-barlow text-blue text-[0.938rem] sm:text-[1.125rem] leading-[180%] text-center lg:text-start  lg:mt-0">
                 Sejamos realistas: se você quer ir para o espaço, é melhor ir de verdade para o espaço sideral
@@ -25,5 +26,7 @@ function backDestin() {
   backdrop-filter: brightness(50%);
   color: #fff;
 }
+
+
 
 </style>
