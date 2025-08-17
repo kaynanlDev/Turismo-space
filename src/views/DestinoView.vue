@@ -49,7 +49,7 @@ function destinD() {
 
 <template>
     <div class="w-full md:w-3/4 h-screen my-0 mx-auto px-6 animate-fade">
-        <DestinoSub />
+        <DestinoSub destinSub="escolha seu destino" destinNum="01" />
         <div class=" w-[80%] my-0 mx-auto flex flex-col lg:flex-row gap-8 h-full  items-center justify-center">
             <div class="mt-[100%] lg:mt-0 flex justify-center"><img class="w-full h-full" :src="destinObj.planetImg" alt="Moon"></div>
             <div class="w-full lg:w-3/6 mt-[10%] flex justify-center flex-col">

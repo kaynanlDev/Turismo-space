@@ -36,9 +36,9 @@ function backCrew() {
     <div  v-if="openMenu === true"  class="menu-m bg-[#0b0d17fd] min-h-screen absolute pt-8 pr-6 pl-8 top-0 right-px w-3/5 sm:hidden animate-fade">
       <button @click="openMenu  = !openMenu" class="w-full mb-20 flex justify-end cursor-pointer"><img :src="close" alt="icon close"></button>
       <nav class="menu-mobile h-full   flex flex-col gap-8">
-        <RouterLink to="/" @click="openMenu = false" class="link font-barlow-c uppercase"><span class="font-bold mr-3">00</span>Home</RouterLink>
-        <RouterLink to="/destino" @click="openMenu = false" class="font-barlow-c uppercase"><span class="font-bold mr-3">01</span>Destino</RouterLink>
-        <RouterLink to="/equipe" @click="openMenu = false" class="font-barlow-c uppercase"><span class="font-bold mr-3">02</span>Equipe</RouterLink>
+        <RouterLink to="/" @click="openMenu = false; backHome()" class="link font-barlow-c uppercase"><span class="font-bold mr-3">00</span>Home</RouterLink>
+        <RouterLink to="/destino" @click="openMenu = false; backDestin()" class="font-barlow-c uppercase"><span class="font-bold mr-3">01</span>Destino</RouterLink>
+        <RouterLink to="/equipe" @click="openMenu = false; backCrew()" class="font-barlow-c uppercase"><span class="font-bold mr-3">02</span>Equipe</RouterLink>
         <RouterLink to="/tecnologia" @click="openMenu = false" class="font-barlow-c uppercase"><span class="font-bold mr-3">03</span>Tecnologia</RouterLink>
       </nav>
     </div>
@@ -84,14 +84,6 @@ body{
   color: #fff;
 }
 
-@media screen and (max-width: 48rem) {
-  body{
-    background: url('./assets/back-mobile.jpg')no-repeat center / cover;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: brightness(50%);
-  }
-}
 
 
 </style>
