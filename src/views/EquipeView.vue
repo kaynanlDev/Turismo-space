@@ -1,46 +1,62 @@
 <script setup>
 import { reactive } from 'vue';
 import DestinoSub from '@/components/DestinoSub.vue';
-import crewA from '@/assets/crew-A.png'
-import crewB from '@/assets/crew-B.png'
-import crewC from '@/assets/crew-C.png'
-import crewD from '@/assets/crew-D.png'
+import crewA from '@/assets/crew/crew-A.png'
+import crewB from '@/assets/crew/crew-B.png'
+import crewC from '@/assets/crew/crew-C.png'
+import crewD from '@/assets/crew/crew-D.png'
 
 const equipeObj = reactive({
-    equipePatente: "comandante",
-    equipeName: "Douglas Hurley",
-    equipeDescription: "Douglas Gerald Hurley é um engenheiro americano, ex-piloto do Corpo de Fuzileiros Navais e ex-astronauta da NASA. Ele foi lançado ao espaço pela terceira vez como comandante da Crew Dragon Demo-2.",
-    equipeImg: crewA
+  equipePatente: "comandante",
+  equipeName: "Douglas Hurley",
+  equipeDescription: "Douglas Gerald Hurley é um engenheiro americano, ex-piloto do Corpo de Fuzileiros Navais e ex-astronauta da NASA. Ele foi lançado ao espaço pela terceira vez como comandante da Crew Dragon Demo-2.",
+  equipeImg: crewA
 })
 
-function equipeA(){
-    equipeObj.equipePatente = "comandante"
-    equipeObj.equipeName = "Douglas Hurley"
-    equipeObj.equipeDescription = "Douglas Gerald Hurley é um engenheiro americano, ex-piloto do Corpo de Fuzileiros Navais e ex-astronauta da NASA. Ele foi lançado ao espaço pela terceira vez como comandante da Crew Dragon Demo-2."
-    equipeObj.equipeImg = crewA
+// Função genérica
+function setEquipe({ patente, name, description, img }) {
+  equipeObj.equipePatente = patente
+  equipeObj.equipeName = name
+  equipeObj.equipeDescription = description
+  equipeObj.equipeImg = img
 }
 
-function equipeB(){
-    equipeObj.equipePatente = "Especialista em Missão"
-    equipeObj.equipeName = "MARK SHUTTLEWORTH"
-    equipeObj.equipeDescription = "Mark Richard Shuttleworth é o fundador e CEO da Canonical, a empresa por trás do sistema operacional Ubuntu baseado em Linux. Shuttleworth se tornou o primeiro sul-africano a viajar ao espaço como turista espacial."
-    equipeObj.equipeImg = crewB
+// Funções individuais (como os destinos)
+function equipeA() {
+  setEquipe({
+    patente: "comandante",
+    name: "Douglas Hurley",
+    description: "Douglas Gerald Hurley é um engenheiro americano, ex-piloto do Corpo de Fuzileiros Navais e ex-astronauta da NASA. Ele foi lançado ao espaço pela terceira vez como comandante da Crew Dragon Demo-2.",
+    img: crewA
+  })
 }
 
-function equipeC(){
-    equipeObj.equipePatente = "piloto"
-    equipeObj.equipeName = "Victor Glover"
-    equipeObj.equipeDescription = "Piloto do primeiro voo operacional da Crew Dragon da SpaceX para a Estação Espacial Internacional. Glover é comandante da Marinha dos EUA, onde pilota um F/A-18. Ele foi membro da tripulação da Expedição 64 e atuou como engenheiro de voo de sistemas da estação."
-    equipeObj.equipeImg = crewC
+function equipeB() {
+  setEquipe({
+    patente: "Especialista em Missão",
+    name: "MARK SHUTTLEWORTH",
+    description: "Mark Richard Shuttleworth é o fundador e CEO da Canonical, a empresa por trás do sistema operacional Ubuntu baseado em Linux. Shuttleworth se tornou o primeiro sul-africano a viajar ao espaço como turista espacial.",
+    img: crewB
+  })
 }
 
-function equipeD(){
-    equipeObj.equipePatente = "Engenheiro de voo"
-    equipeObj.equipeName = "Anousheh Ansari"
-    equipeObj.equipeDescription = "Anousheh Ansari é uma engenheira iraniano-americana e cofundadora da Prodea Systems. Ansari foi a quarta turista espacial autofinanciada, a primeira mulher autofinanciada a voar para a ISS e a primeira iraniana no espaço."
-    equipeObj.equipeImg = crewD
+function equipeC() {
+  setEquipe({
+    patente: "piloto",
+    name: "Victor Glover",
+    description: "Piloto do primeiro voo operacional da Crew Dragon da SpaceX para a Estação Espacial Internacional. Glover é comandante da Marinha dos EUA, onde pilota um F/A-18. Ele foi membro da tripulação da Expedição 64 e atuou como engenheiro de voo de sistemas da estação.",
+    img: crewC
+  })
 }
 
+function equipeD() {
+  setEquipe({
+    patente: "Engenheiro de voo",
+    name: "Anousheh Ansari",
+    description: "Anousheh Ansari é uma engenheira iraniano-americana e cofundadora da Prodea Systems. Ansari foi a quarta turista espacial autofinanciada, a primeira mulher autofinanciada a voar para a ISS e a primeira iraniana no espaço.",
+    img: crewD
+  })
+}
 
 </script>
 <template>
