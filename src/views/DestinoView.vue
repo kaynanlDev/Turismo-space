@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import DestinoSub from '@/components/DestinoSub.vue';
 import BtnDes from '@/components/BtnDes.vue';
 import { reactive } from 'vue';
@@ -15,7 +15,14 @@ const destinObj = reactive({
     planetImg: DestinationA
 })
 
-function setDestination({ name, description, distance, time, img }) {
+interface destinos{
+    name: string
+    description: string
+    distance: string
+    time: string
+    img: string
+}
+function setDestination({ name, description, distance, time, img }: destinos) {
     destinObj.planetName = name
     destinObj.planetDescription = description
     destinObj.planetDistance = distance
