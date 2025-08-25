@@ -3,6 +3,9 @@
 Bem-vindo ao Turismo Space, uma plataforma interativa que leva você a uma jornada pelo universo do turismo espacial. Explore destinos cósmicos, descubra experiências únicas e prepare-se para a viagem do futuro!
 
 
+![Screenshot](screenshot.jpg)
+
+
 ## 🚀 Visão Geral
 
 O Turismo Space oferece uma experiência imersiva no mundo do turismo espacial, apresentando informações sobre destinos, missões espaciais e oportunidades para os entusiastas do cosmos. A interface é moderna, responsiva e projetada para proporcionar uma navegação intuitiva.
@@ -25,7 +28,7 @@ GitHub
 Clone este repositório:
 
 git clone https://github.com/seu-usuario/turismo-space.git
-cd turismo-space
+
 
 
 Instale as dependências:
