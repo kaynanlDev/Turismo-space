@@ -1,33 +1,46 @@
-# vue-project
+## 🌌 Turismo Space
 
-This template should help get you started developing with Vue 3 in Vite.
+Bem-vindo ao Turismo Space, uma plataforma interativa que leva você a uma jornada pelo universo do turismo espacial. Explore destinos cósmicos, descubra experiências únicas e prepare-se para a viagem do futuro!
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Visão Geral
 
-## Type Support for `.vue` Imports in TS
+O Turismo Space oferece uma experiência imersiva no mundo do turismo espacial, apresentando informações sobre destinos, missões espaciais e oportunidades para os entusiastas do cosmos. A interface é moderna, responsiva e projetada para proporcionar uma navegação intuitiva.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-## Customize configuration
+## 🧰 Tecnologias Utilizadas
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Vue: Biblioteca JavaScript para construção da interface de usuário.
 
-## Project Setup
+Tailwind CSS: Framework de design para estilização rápida e responsiva.
 
-```sh
+Vercel: Plataforma de implantação contínua para hospedar o aplicativo.
+
+GitHub
+
+
+
+## Como Rodar Localmente
+
+Clone este repositório:
+
+git clone https://github.com/seu-usuario/turismo-space.git
+cd turismo-space
+
+
+Instale as dependências:
+
 npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
+Inicie o servidor de desenvolvimento:
 
-### Type-Check, Compile and Minify for Production
+npm start
 
-```sh
-npm run build
-```
+
+Abra o navegador e acesse http://localhost:3000 para visualizar o aplicativo.
+
+
+📄 Licença
+
+Este projeto está licenciado sob a Licença MIT
